@@ -4,7 +4,7 @@ set -e
 user="$(whoami)"
 
 mkdir -p "$HOME"/.config/systemd/user/
-git clone https://github.com/AshleyTheNeko/FumoScreen.git /tmp/fumo
+git clone https://github.com/HelifeWasTaken/FumoScreen.git /tmp/fumo
 cd /tmp/fumo
 sed -e "s/ashley/$user/g" default.cpp > fumo.cpp
 mv assets/cirno.png "$HOME"/.config/systemd/user/
