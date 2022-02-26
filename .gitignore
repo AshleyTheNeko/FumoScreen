@@ -1,0 +1,5 @@
+assets/*
+!assets/cirno.png
+fumo
+.vscode
+*.service

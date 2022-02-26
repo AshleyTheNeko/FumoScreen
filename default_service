@@ -1,0 +1,10 @@
+[Unit]
+Description=fumo on da screen
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=sh -c "/home/ashley/.config/systemd/user/fumo"
+
+[Install]
+WantedBy=graphical.target
