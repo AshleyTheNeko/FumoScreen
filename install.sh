@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
+mkdir -p /home/$(whoami)/.config/systemd/user/
 git clone https://github.com/AshleyTheNeko/FumoScreen.git /tmp/fumo
 cd /tmp/fumo
 sed -e "s/ashley/$(whoami)/g" default.cpp > fumo.cpp
