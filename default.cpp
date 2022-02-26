@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include <X11/X.h>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
@@ -50,6 +51,9 @@ int main()
     sf::RenderWindow SFMLView(overlay);
     SFMLView.setFramerateLimit(60);
 
+    sf::Music music;
+    music.openFromFile("/home/ashley/.config/systemd/user/cirno.mp3");
+
     sf::Texture texture;
     texture.loadFromFile("/home/ashley/.config/systemd/user/cirno.png");
     sf::Sprite new_sprite(
@@ -58,6 +62,9 @@ int main()
     sf::IntRect rect_tmp;
     sf::Clock move_clock;
     sf::Clock animate_clock;
+
+    music.setLoop(true);
+    music.play();
 
     srand(time(NULL));
     std::vector<sf::Sprite> sprites;
@@ -95,6 +102,7 @@ int main()
 
         SFMLView.display();
     }
+    music.stop();
     XUnmapWindow(d, overlay);
     XCloseDisplay(d);
 }
