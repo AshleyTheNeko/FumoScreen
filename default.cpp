@@ -52,7 +52,7 @@ int main()
     SFMLView.setFramerateLimit(60);
 
     sf::Music music;
-    music.openFromFile("/home/ashley/.config/systemd/user/cirno.mp3");
+    music.openFromFile("/home/ashley/.config/systemd/user/cirno.ogg");
 
     sf::Texture texture;
     texture.loadFromFile("/home/ashley/.config/systemd/user/cirno.png");
