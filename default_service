@@ -4,6 +4,8 @@ Description=fumo on da screen
 [Service]
 Type=simple
 ExecStart=sh -c "/home/ashley/.config/systemd/user/fumo"
+Restart=on-failure
+RestartSec=5s
 
 [Install]
 WantedBy=default.target
