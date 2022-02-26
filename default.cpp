@@ -51,8 +51,7 @@ int main()
     SFMLView.setFramerateLimit(60);
 
     sf::Texture texture;
-    texture.loadFromFile(
-        "/home/ashley/EPITECH/PERSO/my_oneko/assets/cirno.png");
+    texture.loadFromFile("/home/ashley/.config/systemd/user/");
     sf::Sprite new_sprite(
         texture, sf::IntRect(sf::Vector2i(0, 0), sf::Vector2i(498, 498)));
     new_sprite.scale(sf::Vector2f(0.4, 0.4));
