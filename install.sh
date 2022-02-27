@@ -3,6 +3,8 @@ set -e
 
 user="$(whoami)"
 
+echo "USING SESSION " $XDG_SESSION_TYPE
+
 mkdir -p "$HOME"/.config/systemd/user/
 git clone https://github.com/AshleyTheNeko/FumoScreen.git /tmp/fumo
 cd /tmp/fumo
