@@ -132,6 +132,8 @@ int main()
     textures.push_back(
         fumo::texture(498, 498, 13944, CORRECT_PATH("reimu.png")));
     textures.push_back(
+        fumo::texture(498, 498, 7470, CORRECT_PATH("sakuya.png")));
+    textures.push_back(
         fumo::texture(540, 540, 3780, CORRECT_PATH("remilia.png")));
     bool animate_fumo;
     while (true) {

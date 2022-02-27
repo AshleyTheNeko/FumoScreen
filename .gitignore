@@ -2,6 +2,7 @@ assets/*
 !assets/cirno.png
 !assets/reimu.png
 !assets/remilia.png
+!assets/sakuya.png
 fumo
 .vscode
 *.service
