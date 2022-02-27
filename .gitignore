@@ -1,5 +1,7 @@
 assets/*
 !assets/cirno.png
+!assets/reimu.png
 fumo
 .vscode
 *.service
+a.out
