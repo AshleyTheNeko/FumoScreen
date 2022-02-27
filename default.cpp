@@ -131,6 +131,8 @@ int main()
         fumo::texture(498, 498, 5976, CORRECT_PATH("cirno.png")));
     textures.push_back(
         fumo::texture(498, 498, 13944, CORRECT_PATH("reimu.png")));
+    textures.push_back(
+        fumo::texture(540, 540, 3780, CORRECT_PATH("remilia.png")));
     bool animate_fumo;
     while (true) {
         SFMLView.clear(sf::Color::Transparent);
