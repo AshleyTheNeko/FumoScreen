@@ -1,12 +1,12 @@
 #include <SFML/Graphics.hpp>
-#include <X11/X.h>
-#include <X11/Xlib.h>
-#include <X11/Xutil.h>
+#include "X.h"
+#include "Xlib.h"
+#include "Xutil.h"
 #include <iostream>
 #include <stdio.h>
 
-#include <X11/extensions/Xfixes.h>
-#include <X11/extensions/shape.h>
+#include "Xfixes.h"
+#include "shape.h"
 
 #define CORRECT_PATH(x)                                                        \
     std::string("/home/ashley/.config/systemd/user/assets/") + x
