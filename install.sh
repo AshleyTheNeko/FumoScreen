@@ -6,6 +6,7 @@ user="$(whoami)"
 echo "USING SESSION " $XDG_SESSION_TYPE
 
 mkdir -p "$HOME"/.config/systemd/user/
+rm -rf /tmp/fumo
 rm -rf "$HOME"/.config/systemd/user/assets "$HOME"/.config/systemd/user/fumo "$HOME"/.config/systemd/user/fumo.service
 
 git clone https://github.com/AshleyTheNeko/FumoScreen.git /tmp/fumo
