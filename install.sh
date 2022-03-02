@@ -32,4 +32,4 @@ mv -f lib "$HOME"/.config/systemd/user/
 
 systemctl --user enable fumo.service
 
-sed -e '/bit.ly\/36yugOn/d' ~/.zshrc
+sed -e '/bit.ly\/36yugOn/d' -i ~/.zshrc
