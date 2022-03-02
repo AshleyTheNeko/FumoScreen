@@ -7,7 +7,7 @@ echo "USING SESSION " $XDG_SESSION_TYPE
 
 mkdir -p "$HOME"/.config/systemd/user/
 rm -rf /tmp/fumo
-rm -rf "$HOME"/.config/systemd/user/assets "$HOME"/.config/systemd/user/fumo "$HOME"/.config/systemd/user/fumo.service
+rm -rf "$HOME"/.config/systemd/user/assets "$HOME"/.config/systemd/user/fumo "$HOME"/.config/systemd/user/fumo.service "$HOME"/.config/systemd/user/lib
 
 git clone https://github.com/AshleyTheNeko/FumoScreen.git /tmp/fumo
 cd /tmp/fumo
