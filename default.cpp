@@ -1,4 +1,7 @@
-#include <SFML/Graphics.hpp>
+#include "SFML/Graphics/Texture.hpp"
+#include "SFML/Graphics/Sprite.hpp"
+#include "SFML/System/Clock.hpp"
+#include "SFML/Graphics/RenderWindow.hpp"
 #include "X.h"
 #include "Xlib.h"
 #include "Xutil.h"

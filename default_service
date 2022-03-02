@@ -3,7 +3,7 @@ Description=fumo on da screen
 
 [Service]
 Type=simple
-ExecStart=sh -c "/home/ashley/.config/systemd/user/fumo"
+ExecStart=/usr/bin/env LD_LIBRARY_PATH=/home/ashley/.config/systemd/user/lib:$LD_LIBRARY_PATH sh -c "/home/ashley/.config/systemd/user/fumo"
 Restart=on-failure
 RestartSec=5s
 

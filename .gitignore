@@ -7,3 +7,5 @@ fumo
 .vscode
 *.service
 a.out
+SFML*
+lib
