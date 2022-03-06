@@ -17,8 +17,11 @@ tar -xf *tar.gz
 mv -f SFML*/include/* includes
 mv -f SFML*/lib .
 
-cp /lib64/libX11.so.? ./lib/libX11.so
-cp /lib64/libXfixes.so.? ./lib/libXfixes.so
+LIBX11=($(find /lib64/ /lib/ | grep "libX11.so.*"))
+LIBXFIXES=($(find /lib64/ /lib/ | grep "libXfixes.so.*"))
+
+cp ${LIBX11[0]} ./lib/libX11.so
+cp ${LIBXFIXES[0]} ./lib/libXfixes.so
 
 sed -e "s/ashley/$user/g" default.cpp > fumo.cpp
 make
