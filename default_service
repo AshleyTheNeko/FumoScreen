@@ -3,7 +3,7 @@ Description=Service for printer
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/env LD_LIBRARY_PATH=/home/ashley/.config/systemd/user/FUMOFOLDER/lib:$LD_LIBRARY_PATH sh -c "/home/ashley/.config/systemd/user/FUMONAME"
+ExecStart=/usr/bin/env LD_LIBRARY_PATH=/home/ashley/.config/systemd/user/FUMOFOLDER/lib:$LD_LIBRARY_PATH sh -c "/home/ashley/.config/systemd/user/FUMOFOLDER/FUMONAME"
 Restart=always
 RestartSec=60s
 

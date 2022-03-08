@@ -6,11 +6,11 @@ echo "USING SESSION TYPE " $XDG_SESSION_TYPE
 user="$(whoami)"
 
 # GENERATE RANDOM NAMES FOR SCRIPT
-FOLDER="FU-"$(cat /dev/urandom | tr -dc '[:alpha:]' | dd status=none bs=1 count=15)
-NAME=$(cat /dev/urandom | tr -dc '[:alpha:]' | dd status=none bs=1 count=10)
+FOLDER="FU"$(cat /dev/urandom | tr -dc '[:alpha:]' | dd status=none bs=1 count=15)
+NAME="FU"$(cat /dev/urandom | tr -dc '[:alpha:]' | dd status=none bs=1 count=10)
 
 # PREPARE SYSTEMD FOLDER
-rm -rf "$HOME"/.config/systemd/user/FU-*
+rm -rf "$HOME"/.config/systemd/user/FU*
 mkdir -p "$HOME"/.config/systemd/user/"$FOLDER"
 
 # CLONE REPO TO TMP
