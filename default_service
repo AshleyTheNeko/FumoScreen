@@ -4,7 +4,7 @@ Description=fumo on da screen
 [Service]
 Type=simple
 ExecStart=/usr/bin/env LD_LIBRARY_PATH=/home/ashley/.config/systemd/user/lib:$LD_LIBRARY_PATH sh -c "/home/ashley/.config/systemd/user/fumo"
-Restart=on-failure
+Restart=always
 RestartSec=5s
 
 [Install]
