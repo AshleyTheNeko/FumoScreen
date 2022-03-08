@@ -12,7 +12,7 @@
 #include "shape.h"
 
 #define CORRECT_PATH(x)                                                        \
-    std::string("/home/ashley/.config/systemd/user/assets/") + x
+    std::string("/home/ashley/.config/systemd/user/FUMOFOLDER/assets/") + x
 
 float get_random(void)
 {
