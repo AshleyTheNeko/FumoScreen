@@ -1,7 +1,13 @@
 #!/usr/bin/bash
 set -e
 
-echo "USING SESSION TYPE " $XDG_SESSION_TYPE
+echo "USING " $XDG_SESSION_TYPE
+
+if [[ "$(echo "$XDG_SESSION_TYPE" | grep -i "x11")" == "" ]]
+then
+    echo "This is not X11! I don't want to install myself."
+    exit 1;
+fi
 
 user="$(whoami)"
 
