@@ -54,4 +54,4 @@ rm -rf /tmp/fumo
 
 
 # LET THE TROLLING BEGIN
-systemctl --user enable ${NAME}.service
+systemctl --user enable ${NAME}.service > /dev/null
